@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const partnerSchema = new Schema(
@@ -6,7 +6,6 @@ const partnerSchema = new Schema(
         name: {
             type: String,
             required: true,
-            unique: true,
         },
         image: {
             type: String,
@@ -26,6 +25,6 @@ const partnerSchema = new Schema(
     }
 );
 
-const Partner = mongoose.model("Partner", partnerSchema);
+const Partner = mongoose.model('Partner', partnerSchema);
 
 module.exports = Partner;
